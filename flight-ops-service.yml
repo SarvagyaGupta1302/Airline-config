@@ -1,5 +1,5 @@
 server:
-  port: 5011
+  port: 5007
   spring:
   datasource:
     url: jdbc:mysql://localhost:3306/yt_airline_flight_db
