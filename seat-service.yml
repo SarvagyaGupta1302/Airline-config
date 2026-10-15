@@ -1,5 +1,5 @@
 server:
-  port: 5006
+  port: 5005
 
 spring:
   datasource:
@@ -13,6 +13,8 @@ spring:
       group-id: seat-service-group
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JacksonJsonDeserializer
+      properties:
+        spring.json.trusted.packages: com.sarvagya.common-lib.event
 
 
 eureka:
