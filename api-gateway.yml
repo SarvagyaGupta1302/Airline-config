@@ -30,3 +30,10 @@ spring:
 
       default-filters:
         - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials
+
+      eureka:
+        client:
+          register-with-eureka: true
+          fetch-registry: true
+        instance:
+          prefer-ip-address: true
